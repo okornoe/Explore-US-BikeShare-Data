@@ -74,7 +74,7 @@ def load_data(city, month, day):
     """
 
     # load data file into a dataframe
-    df = pd.read_csv("F:/1_MOOCS/udacity/AAL/programming_for_data_science/python/project_bikeshare/" + CITY_DATA[city])
+    df = pd.read_csv(CITY_DATA[city])
 
     # # convert the Start Time column to datetime
     df['Start Time'] = pd.to_datetime(df['Start Time'])
@@ -205,6 +205,7 @@ def user_stats(df):
 
 
 def view_raw_data(df):
+    
     input_list = ["yes", "no"]
     n =5
     
@@ -231,11 +232,9 @@ def main():
         user_stats(df)
         view_raw_data(df)
         
-
         restart = input('\nWould you like to restart? Enter yes or no.\n')
         if restart.lower() != 'yes':
             break
-
 
 if __name__ == "__main__":
     main()
