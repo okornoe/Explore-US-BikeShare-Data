@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # -*- coding: utf-8 -*-
 """
 Created on Mon Jan 13 17:33:00 2020
@@ -238,3 +239,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
